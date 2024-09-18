@@ -1,0 +1,241 @@
+/* General reset for margins and paddings */
+body, html {
+    background-color: #E5D9F2;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box; /* Ensure padding and border are included in element’s total width and height */
+}
+
+/* Navigation bar styling */
+.navbar {
+    background-color:#A594F9;
+    color: #CDC1FF;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it stays above other content */
+    border-bottom: 1px solid #ccc; /* Optional: Add border for better separation */
+}
+
+/* Remove default margins from ul and li elements */
+.navbar ul {
+    background-color: ;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 1rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Ensure the main content starts right below the nav bar */
+main {
+    margin-top: 0; /* Remove any extra margin */
+    padding: 0; /* Remove padding */
+}
+
+/* Style the container for the image and text */
+.beginning {
+    position: relative;
+    width: 100%;
+    height: 50vh; /* Adjust based on your needs */
+    overflow: hidden;
+}
+
+/* Style the image */
+.beginning img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the container without distortion */
+    display: block;
+}
+
+/* Flex container for text */
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center text */
+    width: 90%; /* Adjust based on text width */
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+/* Style for the primary text */
+.nameintro {
+    color:orange;
+    font-size: 3vw; /* Responsive font size */
+    font-family: 'Sacramento', cursive;
+    margin: 0;
+    text-shadow: 2px 2px 4px; /* Optional: Add shadow for better readability */
+}
+
+/* Additional styling for the secondary text */
+.intro {
+    color:orange;
+    font-size: 1.5vw; /* Responsive font size */
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 0;
+    text-shadow: 1px 1px 2px; /* Optional: Add shadow for better readability */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nameintro {
+        font-size: 5vw; /* Adjust font size for smaller screens */
+    }
+
+    .intro {
+        font-size: 3vw; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .nameintro {
+        font-size: 8vw; /* Adjust font size for very small screens */
+    }
+
+    .intro {
+        font-size: 4vw; /* Adjust font size for very small screens */
+    }
+}
+
+
+
+.divcow{
+    background-color: orange;
+    padding: 1rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 300px;
+    overflow: hidden; /* Hide any overflow content */
+    
+}
+
+.cowh1{
+    color:#2d06ee;
+    text-align: center;
+    font-size: 40px; /* Adjust the font size as needed */
+}
+
+.para{
+    color:#2d06ee;
+    font-size: clamp(1rem, 2vw, 1.5rem); /* Responsive font size */
+    word-wrap: break-word; /* Break long words to fit */
+    overflow-wrap: break-word; /* Ensure long words break */
+    margin: 0; /* Remove default margin to prevent overflow */
+    margin-top: -20px; /* Move the paragraph up slightly */
+}
+
+.cowpic{
+    float: right;
+    position: relative;
+    width: 20%;
+    height: 30vh; /* Adjust based on your needs */
+    overflow: hidden;
+   
+}
+/* Style the image */
+.cowpic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the container without distortion */
+    display: block;
+}
+
+
+.Divskills{
+    background-color:#A594F9;
+    padding: 1rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 300px;
+    overflow: hidden; /* Hide any overflow content */
+    
+}
+
+.Skills{
+    color:orange;
+    text-align: center;
+    font-size: 40px; /* Adjust the font size as needed */
+    margin-top: -10px; /* Move the paragraph up slightly */
+}
+
+.WebDevLanguages{
+     color:orange;
+    font-size: clamp(1rem, 2vw, 1.5rem); /* Responsive font size */
+    word-wrap: break-word; /* Break long words to fit */
+    overflow-wrap: break-word; /* Ensure long words break */
+    margin: 0; /* Remove default margin to prevent overflow */
+    margin-top: -50px; /* Move the paragraph up slightly */
+    
+}
+
+.CoowPiic{
+float: left;
+position: relative;
+width: 20%;
+height: 30vh; /* Adjust based on your needs */
+overflow: hidden;
+
+}
+
+.CoowPiic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the container without distortion */
+    display: block;
+    padding: auto;
+    
+}
+
+
+.MyProjects{
+    color:#2d06ee;
+    text-align: center;
+    font-size: 40px; /* Adjust the font size as needed */
+}
+
+.ParaProjects{
+    text-align: center;
+}
+
+.btn {
+    
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7525ee; /* Button color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition */
+    
+}
+
+.btn:hover {
+    background-color: #21022c; /* Darker color on hover */
+}
+
+.button-container {
+    display: flex;                /* Use Flexbox */
+    justify-content: center;      /* Center horizontally */
+    align-items: center;          /* Center vertically */
+    height: 20vh;                /* Full viewport height */
+}
